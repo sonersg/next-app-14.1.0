@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.active {
+    background-color: var(--text);
+    color: var(--bg);
+    padding: 0.4rem 0.75rem;
+    border-radius: 15px;
+}
+
+.mobileMenuBtn {
+    display: none;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobileMenuBtn {
+        display: block;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 2rem;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: flex;
+        position: absolute;
+        right: 0;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        top: 80px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg);
+        padding: 2em 0;
+        z-index: 1;
+    }
+}

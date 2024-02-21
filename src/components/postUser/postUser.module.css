@@ -1,0 +1,11 @@
+.box small {
+    opacity: 50%;
+}
+
+.profileImg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}

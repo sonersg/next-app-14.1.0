@@ -1,0 +1,37 @@
+.imgContainer {
+    position: relative;
+    max-width: 70%;
+    min-width: 200px;
+    height: auto;
+    min-height: 400px;
+}
+
+.container {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+}
+
+.textContainer h1 {
+    font-size: 4rem;
+}
+
+.card {
+    display: flex;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.box small {
+    opacity: 50%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .imgContainer {
+        max-width: 100%;
+    }
+}

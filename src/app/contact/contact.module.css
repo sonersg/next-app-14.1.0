@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+}
+
+.imgContainer {
+    flex: 1;
+    position: relative;
+    aspect-ratio: 4/3;
+    margin: 2em;
+}
+
+.formContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.formContainer input,
+.formContainer textarea {
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px;
+    color: var(--text);
+    background-color: var(--bgSoft);
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+}

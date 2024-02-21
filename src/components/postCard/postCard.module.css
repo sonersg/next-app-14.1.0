@@ -1,0 +1,32 @@
+.imgContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.top {
+    display: flex;
+    position: relative;
+}
+
+.top span {
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+.bottom {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.bottom a {
+    color: brown;
+}
+
+.container {
+    overflow: hidden;
+    max-width: 300px;
+}

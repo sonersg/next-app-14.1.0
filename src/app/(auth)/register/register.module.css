@@ -1,0 +1,20 @@
+.container {
+    padding: 2em;
+    display: grid;
+    place-content: center;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.container form input {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 1em;
+    color: white;
+}

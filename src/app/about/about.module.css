@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    gap: 7rem;
+    padding: 4em 0;
+}
+
+.textContainer {
+    flex: 1;
+}
+
+.textContainer h2 {
+    color: blue;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 0.4em 0;
+}
+
+.boxContainer {
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.imgContainer {
+    flex: 1;
+    position: relative;
+    /* width: 800px;
+    height: 500px; */
+}
+/* position must be relative for next img containers */
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textContainer {
+        flex: none;
+    }
+
+    .imgContainer {
+        flex: none;
+        aspect-ratio: 16/9;
+        z-index: -1;
+    }
+}
