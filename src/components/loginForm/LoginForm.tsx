@@ -23,7 +23,7 @@ function LoginForm() {
             <div>
                 <p>{state?.error}</p>
                 <Link href="/register">
-                    <span>Don't have an account? Register</span>
+                    <span>Don&apos;t have an account? Register</span>
                 </Link>
             </div>
         </form>
